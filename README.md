@@ -42,13 +42,13 @@
 
 리스트는 다양한 메서드(method) 혹은 함수를 지원하며 메서드를 활용하여 요소를 추가, 삭제 및 변경할 수 있음
 
-**메서드(method)** : 객체(object)가 포함하는 함수 혹은 기능입니다. 
+**메서드(method)** : 객체(object)가 포함하는 함수 혹은 기능
 
 **리스트 생성 방법**
 
 ```python
 empty_list = []
-empty_list = list()**
+empty_list = list()
 ```
 
 리스트는 **`[]`** 혹은, **`list()`** 함수를 활용하여 생성할 수 있음
@@ -78,7 +78,7 @@ empty_list = list()**
 
 ```python
 mylist = []
-mylist.append(값)**
+mylist.append(값)
 ```
 
 **`append()`**는 리스트에 값을 맨 뒤에 추가
@@ -89,7 +89,7 @@ mylist.append(값)**
 
 ```python
 mylist = []
-mylist.insert(index, 값)**
+mylist.insert(index, 값)
 ```
 
 **`insert()`**는 지정한 index에 값을 추가
@@ -98,7 +98,7 @@ mylist.insert(index, 값)**
 
 ```python
 mylist = [1,2,3]
-mylist.remove(제거할 값)**
+mylist.remove(제거할 값)
 ```
 
 리스트에서 **첫 번째로** 나오는 해당 값을 삭제
@@ -107,7 +107,7 @@ mylist.remove(제거할 값)**
 
 ```python
 mylist = [1,2,3]
-mylist.pop(index)**
+mylist.pop(index)
 ```
 
 인덱스의 요소를 반환하고, 해당 요소는 삭제
@@ -115,7 +115,7 @@ mylist.pop(index)**
 **리스트 요소 개수 세기 : len()**
 
 ```python
-**len(리스트)**
+len(리스트)
 ```
 
 전체 항목의 개수를 반환
@@ -126,7 +126,7 @@ mylist.pop(index)**
 
 ```python
 mylist = [1,3,2]
-mylist.sort()**
+mylist.sort()
 ```
 
 - 리스트의 요소를 순서대로 정렬 **(오름차순)**
@@ -134,7 +134,7 @@ mylist.sort()**
 
 ```python
 mylist = [1,3,2]
-mylist.sort(reverse = True)**
+mylist.sort(reverse = True)
 ```
 
 역정렬 (reverse order) = 내림차순도 가능 (reverse = True를 지정)
@@ -143,7 +143,7 @@ mylist.sort(reverse = True)**
 
 ```python
 mylist = [1,3,2]
-mylist.extend(확장할 리스트)**
+mylist.extend(확장할 리스트)
 ```
 
 // 확장할 리스트가 [4,5] 형식으로 들어가야 함
