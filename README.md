@@ -81,9 +81,9 @@ mylist = []
 mylist.append(값)
 ```
 
-**`append()`**는 리스트에 값을 맨 뒤에 추가
+`append()`는 리스트에 값을 맨 뒤에 추가
 
-**`append()`**로 값을 추가할 때는 중복된 값을 추가할 수 있으며, 추가한 순서가 유지됨됨
+`append()`로 값을 추가할 때는 중복된 값을 추가할 수 있으며, 추가한 순서가 유지됨됨
 
 **리스트에 값 추가하기 : insert()**
 
@@ -92,7 +92,7 @@ mylist = []
 mylist.insert(index, 값)
 ```
 
-**`insert()`**는 지정한 index에 값을 추가
+`insert()`는 지정한 index에 값을 추가
 
 **리스트 값 제거하기 : remove()**
 
