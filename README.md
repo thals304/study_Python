@@ -254,3 +254,138 @@ print(tuple(ex_list))# list를 tuple로 변환Copy
 - tuple형은 요소의 추가 및 삭제가 불가능하지만, list형은 요소의 추가 삭제가 가능
 
 - 따라서, list로 type을 변경하면 요소의 추가 및 삭제가 가능 / list형에서 요소를 추가 및 삭제한 후 다시 tuple형으로 변경할 수 있음
+
+### **세트(set)의 생성과 add()**
+
+**시퀀스, 집합형 자료구조**
+
+| 분류 | 타입 | 특징 | 예시 |
+| --- | --- | --- | --- |
+| 시퀀스(sequence) | 리스트(list) | 순서가 있고, 가변(mutable) | [1, 2, 3] |
+| 시퀀스(sequence) | 튜플(tuple) | 순서가 있고, 불변(immutable) | (1, 2, 3) |
+| 세트(set) | 세트(set) | 순서가 없고, 중복을 허용하지 않음 | {1, 2, 3} |
+| 맵(map) | 딕셔너리(dictionary) | 순서가 없고, key/value 쌍으로 이루어짐 | {‘a’: 1, ‘b’: 2, ‘c’: 3} |
+- 세트는 순서가 보장 되지 않음
+- 세트는 요소의 **중복을 허용하지 않음**.
+
+**세트 생성하기**
+
+```python
+exset = set()
+exset = {}
+```
+
+세트는 **`set()`**혹은 **`{}`** 를 활용하여 생성할 수 있음
+
+**세트에 값 추가하기**
+
+```python
+exset.add(값)
+```
+
+**`add()`**를 활용하여 세트에 값을 추가할 수 있음
+
+**교집합 (intersection)**
+
+- 교집합은 집합 A와 B가 주어졌을 때 공통된 요소
+- **`&`** 기호나 **`intersection()`** 메서드를 활용하여 교집합을 구할 수 있음
+
+**합집합 (union)**
+
+- 합집합은 집합 A와 B가 주어졌을 때 집합 A, B 요소 모두를 포함
+- **`|`**기호나 **`union()`** 메서드를 활용하여 합집합을 구할 수 있음
+
+**차집합 (difference)**
+
+- 두 집합에서, 하나의 집합에 포함되고 다른 집합에는 포함되지 않는 모든 원소의 집합.
+- 연산자를 활용하거나 **`difference()`** 메서드를 활용하여 구할 수 있음
+
+### **딕셔너리(dictionary) 생성 및 조회**
+
+딕셔너리는 다음과 같은 특징을 가지고 있음
+
+- 순서를 가지지 않음
+- 키(key)와 값(value)의 쌍으로 이루어져 있음
+- type은 dict로 표시 
+- key를 사용하여 값을 조회할 수 있음
+- 딕셔너리는 **수정, 삭제, 추가가 가능**
+
+**딕셔너리 생성**
+
+```python
+ex_dict = dict() # 빈 딕셔너리 생성
+ex_dict = {'a': 1, 2: 3} # 값을 포함한 딕셔너리 생성
+```
+
+- 딕셔너리는 여러 타입의 key를 가질 수 있음
+
+**딕셔너리 값 조회**
+
+```python
+print(ex_dict['a'])# key 'a' 의 value(값 : 1) 조회
+```
+
+- key를 지정하여 딕셔너리 값(value)을 조회할 수 있음
+
+**딕셔너리의 key 조회하기**
+
+```python
+mydict.keys()
+```
+
+- 모든 key를 조회할 수 있습니다. 하지만, 조회된**`dict_keys`**는 리스트(list)가 아님
+
+이는 객체(object)로 생성되는데, 따라서 이를 list로 변경하기 위해서는 **`list()`**로 타입 변환을 하면 됨
+
+**딕셔너리의 value 조회하기**
+
+```python
+mydict.values()
+```
+
+모든 value를 조회할 수 있음
+
+**딕셔너리의 key-value 조회하기**
+
+```python
+mydict.items()
+```
+
+모든 key, value를 조회할 수 있습니다. 이 때, key, value는 튜플로 묶여서 조회됩니다.
+
+**딕셔너리 값 다중 업데이트**
+
+```python
+ex_dict = {'a':1, 'b':2}
+
+change_dict = {'c':3, 'd':4}
+
+ex_dict.update(change_dict)# ex_dict의 key와 value들을 change_dict의 key와 value로 변경
+```
+
+**`update()`** 를 통해 값을 한꺼번에 업데이트 할 수 있음
+
+**딕셔너리 값 변경**
+
+```python
+ex_dict = {'a':1, 'b':2}
+
+change_dict = {'c':3, 'd':4}
+
+ex_dict['a'] = 0 # ex_dict의 key 'a'의 value를 0으로 변경
+```
+
+key 값에 새로운 값(value)를 대입하여 값을 변경할 수 있음
+
+**딕셔너리 key 제거**
+
+```python
+**ex_dict = {'a':1, 'b':2}
+
+ex_dict.pop('a')#   key 'a' 를 제거하는 동시에 제거되는 key의 value를 반환
+```
+
+**`pop()`** 에 key를 지정하여 값을 제거할 수 있음
+
+제거되는 값의 value를 반환
+
